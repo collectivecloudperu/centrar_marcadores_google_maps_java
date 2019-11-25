@@ -1,2 +1,3 @@
-# centrar_marcadores_google_maps_java
-Como Centrar Múltiples Marcadores en un Mapa de Google en Android con Java
+# Como Centrar Múltiples Marcadores en un Mapa de Google en Android con Java 
+
+Post: http://blog.nubecolectiva.com/como-centrar-multiples-marcadores-en-un-mapa-de-google-en-android-con-java/ 
