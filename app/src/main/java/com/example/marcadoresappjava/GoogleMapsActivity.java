@@ -54,7 +54,6 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
                 .title("Lima - Perú")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.marcador)));
 
-        /*
         LatLng marcador3 = new LatLng(40.6892534, -74.0466891);
         mMap.addMarker(new MarkerOptions()
                 .position(marcador3)
@@ -67,21 +66,20 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
                 .title("Torre Eiffel - Francia")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.marcador)));
 
-         */
 
         // Centrar Marcadores
         LatLngBounds.Builder constructor = new LatLngBounds.Builder();
 
         constructor.include(marcador1);
         constructor.include(marcador2);
-        //constructor.include(marcador3);
-        //constructor.include(marcador4);
+        constructor.include(marcador3);
+        constructor.include(marcador4);
 
         LatLngBounds limites = constructor.build();
 
         int ancho = getResources().getDisplayMetrics().widthPixels;
         int alto = getResources().getDisplayMetrics().heightPixels;
-        int padding = (int) (ancho * 0.25); // 25% de espacio (padding) superior e inferior
+        int padding = (int) (alto * 0.25); // 25% de espacio (padding) superior e inferior
 
         CameraUpdate centrarmarcadores = CameraUpdateFactory.newLatLngBounds(limites, ancho, alto, padding);
 
